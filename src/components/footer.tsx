@@ -62,7 +62,7 @@ export function Footer() {
             <Link href="/" className="inline-flex items-center gap-2">
               <Shield className="h-7 w-7 text-[#0d9488]" />
               <span className="text-xl font-bold">
-                Bill<span className="text-[#0d9488]">Hero</span>
+                <span className="text-[#1e293b]">Un</span><span className="text-[#0d9488]">Bill</span>
               </span>
             </Link>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate-400">
@@ -83,12 +83,12 @@ export function Footer() {
         {/* Disclaimer */}
         <div className="mt-12 border-t border-slate-800 pt-8">
           <p className="text-xs leading-relaxed text-slate-500">
-            BillHero is not a law firm, medical billing company, or financial
+            UnBill is not a law firm, medical billing company, or financial
             advisor. We generate negotiation and request documents — we do not
             guarantee bill reduction.
           </p>
           <p className="mt-4 text-xs text-slate-600">
-            &copy; {new Date().getFullYear()} BillHero. All rights reserved.
+            &copy; {new Date().getFullYear()} UnBill. All rights reserved.
           </p>
         </div>
       </div>

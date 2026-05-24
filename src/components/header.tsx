@@ -43,8 +43,8 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Shield className="h-7 w-7 text-[#0d9488]" />
-          <span className="text-xl font-bold text-[#1e293b]">
-            Bill<span className="text-[#0d9488]">Hero</span>
+          <span className="text-xl font-bold">
+            <span className="text-[#1e293b]">Un</span><span className="text-[#0d9488]">Bill</span>
           </span>
         </Link>
 
@@ -78,8 +78,8 @@ export function Header() {
               <SheetHeader>
                 <SheetTitle className="flex items-center gap-2">
                   <Shield className="h-5 w-5 text-[#0d9488]" />
-                  <span className="font-bold text-[#1e293b]">
-                    Bill<span className="text-[#0d9488]">Hero</span>
+                  <span className="font-bold">
+                    <span className="text-[#1e293b]">Un</span><span className="text-[#0d9488]">Bill</span>
                   </span>
                 </SheetTitle>
               </SheetHeader>
