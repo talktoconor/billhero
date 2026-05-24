@@ -40,7 +40,7 @@ export async function generateMetadata({
   if (!hospital) return { title: "Hospital Not Found" }
 
   return {
-    title: `${hospital.name} Charity Care Policy — UnBill`,
+    title: `${hospital.name} Charity Care Policy — BillDelete`,
     description: `Find out how to qualify for free or reduced-cost care at ${hospital.name}. Income thresholds, application process, and patient rights.`,
   }
 }

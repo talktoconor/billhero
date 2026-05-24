@@ -11,7 +11,7 @@ import {
 import { blogPosts } from "@/data/blog-posts"
 
 export const metadata: Metadata = {
-  title: "UnBill Blog — Medical Bill Guides & Tips",
+  title: "BillDelete Blog — Medical Bill Guides & Tips",
   description:
     "Expert guides on fighting medical bills, understanding your rights, and saving money on healthcare.",
 }
@@ -22,7 +22,7 @@ export default function BlogIndexPage() {
       <div className="mx-auto max-w-5xl">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-            UnBill Blog
+            BillDelete Blog
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
             Expert guides on fighting medical bills, understanding your rights,

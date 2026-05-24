@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "UnBill — Medical Bill Negotiation",
+  title: "BillDelete — Medical Bill Negotiation",
   description:
     "Generate professional medical bill negotiation letters, itemized bill requests, and charity care applications. Fight back against unfair medical bills.",
 };
@@ -34,7 +34,7 @@ export default function RootLayout({
       <head>
         <Script
           defer
-          data-domain="unbill.co"
+          data-domain="billdelete.com"
           src="https://plausible.io/js/script.js"
           strategy="afterInteractive"
         />

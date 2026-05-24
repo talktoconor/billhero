@@ -53,7 +53,7 @@ export async function generateMetadata({
   if (!procedure) return { title: "Procedure Not Found" }
 
   return {
-    title: `${procedure.name} Cost & Fair Price — UnBill`,
+    title: `${procedure.name} Cost & Fair Price — BillDelete`,
     description: `${procedure.name} costs ${formatCurrency(procedure.averageCostUninsured)} on average without insurance. Medicare pays ${formatCurrency(procedure.medicareRate)}. See the fair price and negotiation tips.`,
   }
 }

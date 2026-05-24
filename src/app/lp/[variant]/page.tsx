@@ -178,9 +178,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { variant } = await params
   const v = variants.find((v) => v.slug === variant)
-  if (!v) return { title: "UnBill" }
+  if (!v) return { title: "BillDelete" }
   return {
-    title: `${v.headline} | UnBill`,
+    title: `${v.headline} | BillDelete`,
     description: v.subheadline,
   }
 }
