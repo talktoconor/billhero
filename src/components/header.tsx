@@ -35,16 +35,16 @@ export function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full bg-white/95 backdrop-blur-sm transition-shadow duration-200 ${
+      className={`sticky top-0 z-50 w-full bg-[#FAFAF7]/95 backdrop-blur-sm transition-shadow duration-200 ${
         scrolled ? "shadow-md" : ""
       }`}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <Shield className="h-7 w-7 text-[#0d9488]" />
+          <Shield className="h-7 w-7 text-[#166534]" />
           <span className="text-xl font-bold">
-            <span className="text-[#1e293b]">Bill</span><span className="text-[#0d9488]">Delete</span>
+            <span className="text-[#1C2B3A]">Bill</span><span className="text-[#166534]">Delete</span>
           </span>
         </Link>
 
@@ -54,7 +54,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-[#1e293b] transition-colors hover:text-[#0d9488]"
+              className="text-sm font-medium text-[#1C2B3A] transition-colors hover:text-[#166534]"
             >
               {link.label}
             </Link>
@@ -77,9 +77,9 @@ export function Header() {
             <SheetContent side="right" className="w-72">
               <SheetHeader>
                 <SheetTitle className="flex items-center gap-2">
-                  <Shield className="h-5 w-5 text-[#0d9488]" />
+                  <Shield className="h-5 w-5 text-[#166534]" />
                   <span className="font-bold">
-                    <span className="text-[#1e293b]">Bill</span><span className="text-[#0d9488]">Delete</span>
+                    <span className="text-[#1C2B3A]">Bill</span><span className="text-[#166534]">Delete</span>
                   </span>
                 </SheetTitle>
               </SheetHeader>
@@ -89,7 +89,7 @@ export function Header() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className="text-base font-medium text-[#1e293b] transition-colors hover:text-[#0d9488]"
+                    className="text-base font-medium text-[#1C2B3A] transition-colors hover:text-[#166534]"
                   >
                     {link.label}
                   </Link>

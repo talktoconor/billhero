@@ -19,11 +19,11 @@ const sizeClasses = {
 
 const variantClasses = {
   primary:
-    "bg-[#0d9488] text-white hover:bg-[#0f766e] shadow-md hover:shadow-lg",
+    "bg-[#166534] text-white hover:bg-[#15803D] shadow-md hover:shadow-lg",
   accent:
-    "bg-[#f43f5e] text-white hover:bg-[#e11d48] shadow-md hover:shadow-lg",
+    "bg-[#D97706] text-white hover:bg-[#B45309] shadow-md hover:shadow-lg",
   outline:
-    "border-2 border-[#0d9488] text-[#0d9488] bg-transparent hover:bg-[#0d9488] hover:text-white",
+    "border-2 border-[#166534] text-[#166534] bg-transparent hover:bg-[#166534] hover:text-white",
 } as const
 
 export function CTAButton({

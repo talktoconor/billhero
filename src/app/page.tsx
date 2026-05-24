@@ -159,17 +159,17 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-white px-4 pt-20 pb-16 sm:px-6 lg:px-8 lg:pt-28 lg:pb-24">
+      <section className="relative overflow-hidden bg-[#FAFAF7] px-4 pt-20 pb-16 sm:px-6 lg:px-8 lg:pt-28 lg:pb-24">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[600px] h-[600px] rounded-full bg-[#0d9488]/5 blur-3xl" />
-          <div className="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[400px] h-[400px] rounded-full bg-[#f43f5e]/5 blur-3xl" />
+          <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[600px] h-[600px] rounded-full bg-[#166534]/5 blur-3xl" />
+          <div className="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[400px] h-[400px] rounded-full bg-[#D97706]/5 blur-3xl" />
         </div>
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-bold tracking-tight text-[#1C2B3A] sm:text-5xl lg:text-6xl">
             Your Medical Bill Is Probably Wrong.{" "}
-            <span className="text-[#0d9488]">And Definitely Negotiable.</span>
+            <span className="text-[#166534]">And Definitely Negotiable.</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#4B5563] sm:text-xl">
             Generate professional negotiation letters backed by Medicare rates
             and federal law. Most patients save 40-60% on their medical bills.
           </p>
@@ -182,16 +182,16 @@ export default function HomePage() {
             </CTAButton>
           </div>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
-            <span className="text-sm text-slate-500">
+            <span className="text-sm text-[#4B5563]">
               Trusted by thousands of patients
             </span>
-            <Badge variant="secondary" className="bg-[#0d9488]/10 text-[#0d9488]">
+            <Badge variant="secondary" className="bg-[#166534]/10 text-[#166534]">
               4.9/5 rating
             </Badge>
-            <Badge variant="secondary" className="bg-[#0d9488]/10 text-[#0d9488]">
+            <Badge variant="secondary" className="bg-[#166534]/10 text-[#166534]">
               $2M+ saved
             </Badge>
-            <Badge variant="secondary" className="bg-[#0d9488]/10 text-[#0d9488]">
+            <Badge variant="secondary" className="bg-[#166534]/10 text-[#166534]">
               Money-back guarantee
             </Badge>
           </div>
@@ -199,15 +199,15 @@ export default function HomePage() {
       </section>
 
       {/* Stats Bar */}
-      <section className="bg-[#0d9488]/[0.06] border-y border-[#0d9488]/10 px-4 py-12 sm:px-6 lg:px-8">
+      <section className="bg-[#FDF8F0] border-y border-[#E5E7EB] px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="text-3xl font-bold text-[#0d9488] sm:text-4xl">
+                <p className="text-3xl font-bold text-[#166534] sm:text-4xl">
                   {stat.value}
                 </p>
-                <p className="mt-1 text-sm text-slate-600">{stat.label}</p>
+                <p className="mt-1 text-sm text-[#4B5563]">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -218,10 +218,10 @@ export default function HomePage() {
       <section className="bg-white px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-[#1C2B3A] sm:text-4xl">
               Choose Your Battle Plan
             </h2>
-            <p className="mt-4 text-lg text-slate-600">
+            <p className="mt-4 text-lg text-[#4B5563]">
               Every document is customized to your hospital, procedure, and
               financial situation.
             </p>
@@ -234,20 +234,20 @@ export default function HomePage() {
                 <Card key={product.name} className="relative flex flex-col">
                   {product.popular && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                      <Badge className="bg-[#f43f5e] text-white">
+                      <Badge className="bg-[#D97706] text-white">
                         Most Popular
                       </Badge>
                     </div>
                   )}
                   <CardHeader>
-                    <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-[#0d9488]/10">
-                      <Icon className="h-5 w-5 text-[#0d9488]" />
+                    <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-[#166534]/10">
+                      <Icon className="h-5 w-5 text-[#166534]" />
                     </div>
                     <CardTitle className="text-lg">{product.name}</CardTitle>
                     <CardDescription>{product.description}</CardDescription>
                   </CardHeader>
                   <CardContent className="mt-auto">
-                    <p className="text-3xl font-bold text-slate-900">
+                    <p className="text-3xl font-bold text-[#1C2B3A]">
                       {product.price}
                     </p>
                   </CardContent>
@@ -268,19 +268,19 @@ export default function HomePage() {
 
           {/* Bundle Card */}
           <div className="mt-8">
-            <Card className="relative border-2 border-[#0d9488] bg-gradient-to-br from-[#0d9488]/[0.04] to-white">
+            <Card className="relative border-2 border-[#166534] bg-gradient-to-br from-[#166534]/[0.04] to-white">
               <CardHeader>
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                   <div className="flex items-center gap-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#0d9488]/10">
-                      <Package className="h-6 w-6 text-[#0d9488]" />
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#166534]/10">
+                      <Package className="h-6 w-6 text-[#166534]" />
                     </div>
                     <div>
                       <div className="flex items-center gap-3">
                         <CardTitle className="text-xl">
                           Complete Bill Fight Kit
                         </CardTitle>
-                        <Badge className="bg-[#0d9488] text-white">
+                        <Badge className="bg-[#166534] text-white">
                           Save $48
                         </Badge>
                       </div>
@@ -292,8 +292,8 @@ export default function HomePage() {
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="text-right">
-                      <p className="text-sm text-slate-500 line-through">$147</p>
-                      <p className="text-3xl font-bold text-slate-900">$99</p>
+                      <p className="text-sm text-[#4B5563] line-through">$147</p>
+                      <p className="text-3xl font-bold text-[#1C2B3A]">$99</p>
                     </div>
                     <CTAButton href="/fight" variant="accent" size="lg">
                       Get the Kit
@@ -311,9 +311,9 @@ export default function HomePage() {
                   ].map((item) => (
                     <div
                       key={item}
-                      className="flex items-center gap-2 text-sm text-slate-700"
+                      className="flex items-center gap-2 text-sm text-[#1C2B3A]"
                     >
-                      <CheckCircle2 className="h-4 w-4 shrink-0 text-[#0d9488]" />
+                      <CheckCircle2 className="h-4 w-4 shrink-0 text-[#166534]" />
                       {item}
                     </div>
                   ))}
@@ -327,11 +327,11 @@ export default function HomePage() {
       {/* How It Works */}
       <section
         id="how-it-works"
-        className="scroll-mt-20 bg-slate-50 px-4 py-20 sm:px-6 lg:px-8"
+        className="scroll-mt-20 bg-[#FDF8F0] px-4 py-20 sm:px-6 lg:px-8"
       >
         <div className="mx-auto max-w-4xl">
           <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-[#1C2B3A] sm:text-4xl">
               Three Steps to a Lower Bill
             </h2>
           </div>
@@ -340,16 +340,16 @@ export default function HomePage() {
               const Icon = step.icon
               return (
                 <div key={step.number} className="text-center">
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#0d9488] text-white">
+                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#166534] text-white">
                     <Icon className="h-6 w-6" />
                   </div>
-                  <div className="mt-1 text-sm font-semibold text-[#0d9488]">
+                  <div className="mt-1 text-sm font-semibold text-[#166534]">
                     Step {step.number}
                   </div>
-                  <h3 className="mt-2 text-lg font-semibold text-slate-900">
+                  <h3 className="mt-2 text-lg font-semibold text-[#1C2B3A]">
                     {step.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-6 text-slate-600">
+                  <p className="mt-2 text-sm leading-6 text-[#4B5563]">
                     {step.description}
                   </p>
                 </div>
@@ -363,30 +363,30 @@ export default function HomePage() {
       <section className="bg-white px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-[#1C2B3A] sm:text-4xl">
               Real Results from Real Patients
             </h2>
-            <p className="mt-2 text-sm text-slate-500">
+            <p className="mt-2 text-sm text-[#4B5563]">
               Illustrative examples based on common outcomes
             </p>
           </div>
           <div className="mt-14 grid gap-8 sm:grid-cols-3">
             {testimonials.map((t) => (
-              <Card key={t.name} className="relative">
+              <Card key={t.name} className="relative bg-[#FDF8F0]">
                 <CardContent className="pt-2">
-                  <Quote className="mb-3 h-8 w-8 text-[#0d9488]/20" />
-                  <p className="text-slate-700 leading-relaxed">
+                  <Quote className="mb-3 h-8 w-8 text-[#166534]/20" />
+                  <p className="text-[#1C2B3A] leading-relaxed">
                     &ldquo;{t.quote}&rdquo;
                   </p>
                   <div className="mt-6 flex items-center justify-between">
                     <div>
-                      <p className="text-sm font-semibold text-slate-900">
+                      <p className="text-sm font-semibold text-[#1C2B3A]">
                         {t.name}
                       </p>
                     </div>
                     <Badge
                       variant="secondary"
-                      className="bg-emerald-50 text-emerald-700"
+                      className="bg-[#FDF3DC] text-[#D97706]"
                     >
                       Saved {t.saved}
                     </Badge>
@@ -399,10 +399,10 @@ export default function HomePage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-slate-50 px-4 py-20 sm:px-6 lg:px-8">
+      <section className="bg-[#FDF8F0] px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-[#1C2B3A] sm:text-4xl">
               Frequently Asked Questions
             </h2>
           </div>
@@ -410,11 +410,11 @@ export default function HomePage() {
             <Accordion>
               {faqs.map((faq, i) => (
                 <AccordionItem key={i} value={`faq-${i}`}>
-                  <AccordionTrigger className="text-base font-semibold text-slate-900">
+                  <AccordionTrigger className="text-base font-semibold text-[#1C2B3A]">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-[#4B5563] leading-relaxed">
                       {faq.answer}
                     </p>
                   </AccordionContent>
@@ -426,13 +426,13 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-[#0d9488] px-4 py-20 sm:px-6 lg:px-8">
+      <section className="bg-[#166534] px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <Shield className="mx-auto h-12 w-12 text-white/80" />
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Stop Overpaying for Healthcare
           </h2>
-          <p className="mt-4 text-lg text-teal-100">
+          <p className="mt-4 text-lg text-green-100">
             Join thousands of patients who have taken control of their medical
             bills. Your documents are generated instantly and backed by a
             money-back guarantee.

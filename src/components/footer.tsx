@@ -33,7 +33,7 @@ function FooterColumn({
 }) {
   return (
     <div>
-      <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-400">
+      <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-[#F59E0B]/70">
         {title}
       </h3>
       <ul className="space-y-3">
@@ -41,7 +41,7 @@ function FooterColumn({
           <li key={link.label}>
             <Link
               href={link.href}
-              className="text-sm text-slate-300 transition-colors hover:text-white"
+              className="text-sm text-slate-300 transition-colors hover:text-[#F59E0B]"
             >
               {link.label}
             </Link>
@@ -54,21 +54,21 @@ function FooterColumn({
 
 export function Footer() {
   return (
-    <footer className="bg-slate-900 text-white">
+    <footer className="bg-[#1C2B3A] text-white">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
           {/* Brand column */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-flex items-center gap-2">
-              <Shield className="h-7 w-7 text-[#0d9488]" />
+              <Shield className="h-7 w-7 text-[#F59E0B]" />
               <span className="text-xl font-bold">
-                <span className="text-[#1e293b]">Bill</span><span className="text-[#0d9488]">Delete</span>
+                <span className="text-white">Bill</span><span className="text-[#F59E0B]">Delete</span>
               </span>
             </Link>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate-400">
+            <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate-300">
               Medical Bills Too High? Fight Back.
             </p>
-            <p className="mt-4 text-xs leading-relaxed text-slate-500">
+            <p className="mt-4 text-xs leading-relaxed text-slate-400">
               Join thousands of patients who have saved on their medical bills
               using our negotiation tools.
             </p>
@@ -81,13 +81,13 @@ export function Footer() {
         </div>
 
         {/* Disclaimer */}
-        <div className="mt-12 border-t border-slate-800 pt-8">
-          <p className="text-xs leading-relaxed text-slate-500">
+        <div className="mt-12 border-t border-white/10 pt-8">
+          <p className="text-xs leading-relaxed text-slate-400">
             BillDelete is not a law firm, medical billing company, or financial
             advisor. We generate negotiation and request documents — we do not
             guarantee bill reduction.
           </p>
-          <p className="mt-4 text-xs text-slate-600">
+          <p className="mt-4 text-xs text-slate-500">
             &copy; {new Date().getFullYear()} BillDelete. All rights reserved.
           </p>
         </div>

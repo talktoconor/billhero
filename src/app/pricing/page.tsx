@@ -145,12 +145,12 @@ function ComparisonCell({
   value: string | boolean
 }) {
   if (typeof value === "string") {
-    return <span className="text-sm font-medium text-slate-700">{value}</span>
+    return <span className="text-sm font-medium text-[#1C2B3A]">{value}</span>
   }
   return value ? (
-    <Check className="mx-auto h-5 w-5 text-[#0d9488]" />
+    <Check className="mx-auto h-5 w-5 text-[#166534]" />
   ) : (
-    <X className="mx-auto h-5 w-5 text-slate-300" />
+    <X className="mx-auto h-5 w-5 text-[#E5E7EB]" />
   )
 }
 
@@ -158,14 +158,14 @@ export default function PricingPage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="bg-white px-4 pt-20 pb-16 sm:px-6 lg:px-8">
+      <section className="bg-[#FAFAF7] px-4 pt-20 pb-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-[#1C2B3A] sm:text-5xl">
             Simple, Transparent Pricing
           </h1>
-          <p className="mt-4 text-lg text-slate-600 sm:text-xl">
+          <p className="mt-4 text-lg text-[#4B5563] sm:text-xl">
             Billing advocates charge $100-200/hour.{" "}
-            <span className="font-semibold text-[#0d9488]">
+            <span className="font-semibold text-[#166534]">
               We charge $49.
             </span>
           </p>
@@ -173,7 +173,7 @@ export default function PricingPage() {
       </section>
 
       {/* Pricing Cards */}
-      <section className="bg-slate-50 px-4 py-16 sm:px-6 lg:px-8">
+      <section className="bg-[#FDF8F0] px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           {/* Individual Products */}
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -184,23 +184,23 @@ export default function PricingPage() {
                   key={product.name}
                   className={`relative flex flex-col ${
                     product.popular
-                      ? "ring-2 ring-[#f43f5e] shadow-lg"
+                      ? "ring-2 ring-[#166534] shadow-lg"
                       : ""
                   }`}
                 >
                   {product.popular && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                      <Badge className="bg-[#f43f5e] text-white">
+                      <Badge className="bg-[#D97706] text-white">
                         Most Popular
                       </Badge>
                     </div>
                   )}
                   <CardHeader className="pb-0">
-                    <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-[#0d9488]/10">
-                      <Icon className="h-5 w-5 text-[#0d9488]" />
+                    <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-[#166534]/10">
+                      <Icon className="h-5 w-5 text-[#166534]" />
                     </div>
                     <CardTitle className="text-lg">{product.name}</CardTitle>
-                    <p className="text-3xl font-bold text-slate-900 mt-2">
+                    <p className="text-3xl font-bold text-[#1C2B3A] mt-2">
                       {product.price}
                     </p>
                   </CardHeader>
@@ -210,9 +210,9 @@ export default function PricingPage() {
                       {product.features.map((feature) => (
                         <li
                           key={feature}
-                          className="flex items-start gap-2 text-sm text-slate-600"
+                          className="flex items-start gap-2 text-sm text-[#4B5563]"
                         >
-                          <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#0d9488]" />
+                          <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#166534]" />
                           {feature}
                         </li>
                       ))}
@@ -235,19 +235,19 @@ export default function PricingPage() {
 
           {/* Bundle Card */}
           <div className="mt-10">
-            <Card className="relative border-2 border-[#0d9488] bg-gradient-to-br from-[#0d9488]/[0.04] to-white shadow-xl">
+            <Card className="relative border-2 border-[#166534] bg-gradient-to-br from-[#166534]/[0.04] to-white shadow-xl">
               <CardHeader>
                 <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
                   <div className="flex items-start gap-4">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#0d9488]/10">
-                      <Package className="h-7 w-7 text-[#0d9488]" />
+                    <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#166534]/10">
+                      <Package className="h-7 w-7 text-[#166534]" />
                     </div>
                     <div>
                       <div className="flex items-center gap-3">
                         <CardTitle className="text-2xl">
                           Complete Bill Fight Kit
                         </CardTitle>
-                        <Badge className="bg-[#0d9488] text-white">
+                        <Badge className="bg-[#166534] text-white">
                           Save {bundle.savings}
                         </Badge>
                       </div>
@@ -259,10 +259,10 @@ export default function PricingPage() {
                   </div>
                   <div className="flex items-center gap-6">
                     <div className="text-right">
-                      <p className="text-sm text-slate-500 line-through">
+                      <p className="text-sm text-[#4B5563] line-through">
                         {bundle.originalPrice}
                       </p>
-                      <p className="text-4xl font-bold text-slate-900">
+                      <p className="text-4xl font-bold text-[#1C2B3A]">
                         {bundle.price}
                       </p>
                     </div>
@@ -278,9 +278,9 @@ export default function PricingPage() {
                   {bundle.features.map((feature) => (
                     <div
                       key={feature}
-                      className="flex items-center gap-2 text-sm text-slate-700"
+                      className="flex items-center gap-2 text-sm text-[#1C2B3A]"
                     >
-                      <CheckCircle2 className="h-4 w-4 shrink-0 text-[#0d9488]" />
+                      <CheckCircle2 className="h-4 w-4 shrink-0 text-[#166534]" />
                       {feature}
                     </div>
                   ))}
@@ -295,10 +295,10 @@ export default function PricingPage() {
       <section className="bg-white px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-[#1C2B3A] sm:text-4xl">
               Compare Plans
             </h2>
-            <p className="mt-4 text-lg text-slate-600">
+            <p className="mt-4 text-lg text-[#4B5563]">
               See exactly what each product includes.
             </p>
           </div>
@@ -306,24 +306,24 @@ export default function PricingPage() {
           <div className="mt-12 overflow-x-auto">
             <table className="w-full min-w-[700px] border-collapse">
               <thead>
-                <tr className="border-b-2 border-slate-200">
-                  <th className="px-4 py-4 text-left text-sm font-semibold text-slate-900">
+                <tr className="border-b-2 border-[#E5E7EB]">
+                  <th className="px-4 py-4 text-left text-sm font-semibold text-[#1C2B3A]">
                     Feature
                   </th>
                   {products.map((p) => (
                     <th
                       key={p.name}
-                      className="px-4 py-4 text-center text-sm font-semibold text-slate-900"
+                      className="px-4 py-4 text-center text-sm font-semibold text-[#1C2B3A]"
                     >
                       {p.name}
-                      <span className="block text-xs font-normal text-slate-500 mt-1">
+                      <span className="block text-xs font-normal text-[#4B5563] mt-1">
                         {p.price}
                       </span>
                     </th>
                   ))}
-                  <th className="px-4 py-4 text-center text-sm font-semibold text-[#0d9488] bg-[#0d9488]/[0.04] rounded-t-lg">
+                  <th className="px-4 py-4 text-center text-sm font-semibold text-[#166534] bg-[#166534]/[0.04] rounded-t-lg">
                     Complete Kit
-                    <span className="block text-xs font-normal text-[#0d9488]/70 mt-1">
+                    <span className="block text-xs font-normal text-[#166534]/70 mt-1">
                       {bundle.price}
                     </span>
                   </th>
@@ -333,9 +333,9 @@ export default function PricingPage() {
                 {comparisonRows.map((row, i) => (
                   <tr
                     key={row.key}
-                    className={i % 2 === 0 ? "bg-slate-50/50" : "bg-white"}
+                    className={i % 2 === 0 ? "bg-[#FDF8F0]/50" : "bg-white"}
                   >
-                    <td className="px-4 py-4 text-sm font-medium text-slate-700">
+                    <td className="px-4 py-4 text-sm font-medium text-[#4B5563]">
                       {row.label}
                     </td>
                     {products.map((p) => (
@@ -346,7 +346,7 @@ export default function PricingPage() {
                         <ComparisonCell value={p.comparison[row.key]} />
                       </td>
                     ))}
-                    <td className="px-4 py-4 text-center bg-[#0d9488]/[0.04]">
+                    <td className="px-4 py-4 text-center bg-[#166534]/[0.04]">
                       <ComparisonCell value={bundle.comparison[row.key]} />
                     </td>
                   </tr>
@@ -358,15 +358,15 @@ export default function PricingPage() {
       </section>
 
       {/* Money-back Guarantee */}
-      <section className="bg-slate-50 px-4 py-16 sm:px-6 lg:px-8">
+      <section className="bg-[#FDF8F0] px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#0d9488]/10">
-            <Shield className="h-8 w-8 text-[#0d9488]" />
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#166534]/10">
+            <Shield className="h-8 w-8 text-[#166534]" />
           </div>
-          <h2 className="mt-6 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+          <h2 className="mt-6 text-2xl font-bold tracking-tight text-[#1C2B3A] sm:text-3xl">
             100% Satisfaction Guarantee
           </h2>
-          <p className="mt-4 text-lg text-slate-600 leading-relaxed">
+          <p className="mt-4 text-lg text-[#4B5563] leading-relaxed">
             If you&apos;re not satisfied with your documents, we&apos;ll refund
             your purchase. No questions asked.
           </p>
@@ -374,12 +374,12 @@ export default function PricingPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-[#0d9488] px-4 py-20 sm:px-6 lg:px-8">
+      <section className="bg-[#166534] px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Ready to Fight Your Bill?
           </h2>
-          <p className="mt-4 text-lg text-teal-100">
+          <p className="mt-4 text-lg text-green-100">
             Most patients save 40-60%. Your documents are generated instantly.
           </p>
           <div className="mt-10">
